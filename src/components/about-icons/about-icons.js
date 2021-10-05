@@ -3,7 +3,6 @@ import styled from "styled-components";
 import "../../styles/style.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { faEnvelope, faGrinBeam } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -51,7 +50,6 @@ const AboutIconsTitle = styled.h4`
 
 const AboutIconsDesc = styled.h4`
     color: #ccc;
-    text-align: center;
 `;
 
 const AboutIconsDescLink = styled.a`
