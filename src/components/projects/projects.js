@@ -7,6 +7,7 @@ import DeliveryPizzasTests from '../../images/deliverypizzastests.png';
 import ContaBancaria from '../../images/contabancaria.png';
 import Aero from '../../images/fcamara.png';
 import TestesUnitarios from '../../images/testesunitarios.png';
+import ReactTodoList from '../../images/reacttodolist.png';
 
 const Container = styled.div`
     width: 65rem;
@@ -99,8 +100,8 @@ const Projects = () => {
                 <ContainerProjects>
 
                     <ProjectsBody>
-                        <ProjectsImg></ProjectsImg>
-                        <ProjectsBodyTitle>Orçamentos</ProjectsBodyTitle>
+                        <ProjectsImg src={ReactTodoList}></ProjectsImg>
+                        <ProjectsBodyTitle>Todo List</ProjectsBodyTitle>
                         <ProjectsBodyDesc>Tecnologias: HTML, CSS, JS e React com Styled Components.</ProjectsBodyDesc>
                     </ProjectsBody>
 
