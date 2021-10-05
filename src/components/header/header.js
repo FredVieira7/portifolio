@@ -108,6 +108,12 @@ const ImageProfile = styled.img`
     width: 35%;
     height: 100%;
     margin-top: -70px;
+
+    transition: ease-in .3s;
+
+    &:hover {
+        filter: drop-shadow(5px 5px 5px white)
+    }
 `;
 
 
