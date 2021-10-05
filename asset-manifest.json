@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portifolio/static/css/main.f85f7885.chunk.css",
+    "main.js": "/portifolio/static/js/main.e9f97501.chunk.js",
+    "main.js.map": "/portifolio/static/js/main.e9f97501.chunk.js.map",
+    "runtime-main.js": "/portifolio/static/js/runtime-main.2cef5976.js",
+    "runtime-main.js.map": "/portifolio/static/js/runtime-main.2cef5976.js.map",
+    "static/js/2.813f4e8f.chunk.js": "/portifolio/static/js/2.813f4e8f.chunk.js",
+    "static/js/2.813f4e8f.chunk.js.map": "/portifolio/static/js/2.813f4e8f.chunk.js.map",
+    "index.html": "/portifolio/index.html",
+    "static/css/main.f85f7885.chunk.css.map": "/portifolio/static/css/main.f85f7885.chunk.css.map",
+    "static/js/2.813f4e8f.chunk.js.LICENSE.txt": "/portifolio/static/js/2.813f4e8f.chunk.js.LICENSE.txt",
+    "static/media/contabancaria.b5001ba6.png": "/portifolio/static/media/contabancaria.b5001ba6.png",
+    "static/media/deliverypizzas.dc4030dc.png": "/portifolio/static/media/deliverypizzas.dc4030dc.png",
+    "static/media/deliverypizzastests.575491bc.png": "/portifolio/static/media/deliverypizzastests.575491bc.png",
+    "static/media/fcamara.fe580c29.png": "/portifolio/static/media/fcamara.fe580c29.png",
+    "static/media/perfil.cdbf343d.png": "/portifolio/static/media/perfil.cdbf343d.png",
+    "static/media/testesunitarios.210abcb7.png": "/portifolio/static/media/testesunitarios.210abcb7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2cef5976.js",
+    "static/js/2.813f4e8f.chunk.js",
+    "static/css/main.f85f7885.chunk.css",
+    "static/js/main.e9f97501.chunk.js"
+  ]
+}
