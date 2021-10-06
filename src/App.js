@@ -1,3 +1,5 @@
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+
 import '../src/styles/style.css';
 import Header from './components/header/header';
 import About from './components/about/about';
@@ -10,12 +12,14 @@ import Footer from './components/footer/footer';
 const App = () => {
   return (
     <>
-      <Header></Header>
-      <About></About>
-      <AboutIcons></AboutIcons>
-      <Projects></Projects>
-      <Skills></Skills>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Header></Header>
+        <About></About>
+        <AboutIcons></AboutIcons>
+        <Projects></Projects>
+        <Skills></Skills>
+        <Footer></Footer>
+      </BrowserRouter>
 
     </>
   );

@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import "../../styles/style.css";
+import { Link } from 'react-router-dom';
+
+
 import profile from "../../images/perfil.png"
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 
 const Container = styled.div`
@@ -39,15 +43,6 @@ const HeaderMenu = styled.ul`
     li {
         color: white;
         list-style-type: none;
-
-        a {
-           cursor: pointer;
-
-           &:hover {
-               color: #D008F9;
-               
-           }
-        }
     }
 `;
 
@@ -116,7 +111,6 @@ const ImageProfile = styled.img`
     }
 `;
 
-
 const Header = () => {
     return(
         <>
@@ -126,9 +120,15 @@ const Header = () => {
                     <HeaderNav>
                         <HeaderMenu>
                             <ul className="menu-list">
-                                <li><a>Sobre</a></li>
-                                <li><a>Projetos</a></li>
-                                <li><a>Habilidades</a></li>
+                                <li>
+                                    <Link className="link-router" to="/sobre">Sobre</Link>
+                                </li>
+                                <li>
+                                    <Link className="link-router" to="/projetos">Projetos</Link>
+                                </li>
+                                <li>
+                                    <Link className="link-router" to="/habilidades">Habilidades</Link>
+                                </li>
                             </ul>
                         </HeaderMenu>
                     </HeaderNav>    

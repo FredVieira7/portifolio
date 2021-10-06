@@ -45,3 +45,12 @@ html, body {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.link-router {
+  color: white;
+  text-decoration: none;
+}
+
+.link-router:hover {
+  color: #D008F9;
+}
