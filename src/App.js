@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import '../src/styles/style.css';
 import Header from './components/header/header';
@@ -13,12 +13,12 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Header></Header>
-        <About></About>
-        <AboutIcons></AboutIcons>
-        <Projects></Projects>
-        <Skills></Skills>
-        <Footer></Footer>
+          <Header></Header>
+          <About></About>
+          <AboutIcons></AboutIcons>
+          <Projects></Projects>
+          <Skills></Skills>
+          <Footer></Footer>
       </BrowserRouter>
 
     </>

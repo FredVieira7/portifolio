@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "../../styles/style.css";
-import { BrowserRouter, Switch, Route, Link as LinkRouter } from 'react-router-dom';
-import { Link as LinkScroll} from "react-scroll"
+import { BrowserRouter, Link as LinkRouter, useLocation } from 'react-router-dom';
+import { Link as LinkScroll} from "react-scroll";
 
 import profile from "../../images/perfil.png"
 
@@ -113,7 +113,6 @@ const ImageProfile = styled.img`
 const Header = () => {
     
 
-
     return(
         <>
             <BrowserRouter>
@@ -124,7 +123,7 @@ const Header = () => {
                             <HeaderMenu>
                                 <ul className="menu-list">
                                     <li>
-                                        <LinkRouter to="/portifolio/sobre" className="link-router"><LinkScroll to="Sobre"
+                                        <LinkRouter to="/" className="link-router"><LinkScroll to="Sobre"
                                             smooth={true}
                                             duration={500}
                                             spy={false}
@@ -132,7 +131,7 @@ const Header = () => {
                                         </LinkRouter>
                                     </li>
                                     <li>
-                                        <LinkRouter to="/portifolio/projetos"  className="link-router"><LinkScroll to="Projetos"
+                                        <LinkRouter to="/projetos"  className="link-router"><LinkScroll to="Projetos"
                                             smooth={true}
                                             duration={500}
                                             spy={false}
@@ -140,7 +139,7 @@ const Header = () => {
                                         </LinkRouter>
                                     </li>
                                     <li>
-                                        <LinkRouter to="/portifolio/habilidades"  className="link-router"><LinkScroll to="Habilidades"
+                                        <LinkRouter to="/habilidades"  className="link-router"><LinkScroll to="Habilidades"
                                             smooth={true}
                                             duration={500}
                                             spy={false}
