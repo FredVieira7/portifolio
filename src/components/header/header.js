@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import "../../styles/style.css";
-import { Link } from 'react-router-dom';
-
+import { BrowserRouter, Switch, Route, Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkScroll} from "react-scroll"
 
 import profile from "../../images/perfil.png"
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 
 const Container = styled.div`
@@ -112,40 +111,60 @@ const ImageProfile = styled.img`
 `;
 
 const Header = () => {
+    
+
+
     return(
         <>
-            <Container>
-                <HeaderSite>
-                    <HeaderLogo>Fred - Portifólio</HeaderLogo>
-                    <HeaderNav>
-                        <HeaderMenu>
-                            <ul className="menu-list">
-                                <li>
-                                    <Link className="link-router" to="/sobre">Sobre</Link>
-                                </li>
-                                <li>
-                                    <Link className="link-router" to="/projetos">Projetos</Link>
-                                </li>
-                                <li>
-                                    <Link className="link-router" to="/habilidades">Habilidades</Link>
-                                </li>
-                            </ul>
-                        </HeaderMenu>
-                    </HeaderNav>    
-                </HeaderSite>
-                <BannerHeader>
-                    <BannerDivider>
-                        <Presentation>Olá, me chamo Fred Vieira
-                            <PresentationJob>Sou desenvolvedor full stack junior!</PresentationJob>
-                            <ButtonCV>Download CV</ButtonCV>
-                            <ButtonContact>Entrar em contato</ButtonContact>
-                        </Presentation>
-                        
-                        <ImageProfile src={profile}></ImageProfile>
-                    </BannerDivider>
-                </BannerHeader>
-            </Container>
+            <BrowserRouter>
+                <Container>
+                    <HeaderSite>
+                        <HeaderLogo>Fred - Portifólio</HeaderLogo>
+                        <HeaderNav>
+                            <HeaderMenu>
+                                <ul className="menu-list">
+                                    <li>
+                                        <LinkRouter to="/portifolio/sobre" className="link-router"><LinkScroll to="Sobre"
+                                            smooth={true}
+                                            duration={500}
+                                            spy={false}
+                                            offset={-80}>Sobre</LinkScroll>
+                                        </LinkRouter>
+                                    </li>
+                                    <li>
+                                        <LinkRouter to="/portifolio/projetos"  className="link-router"><LinkScroll to="Projetos"
+                                            smooth={true}
+                                            duration={500}
+                                            spy={false}
+                                            offset={-80}>Projetos</LinkScroll>
+                                        </LinkRouter>
+                                    </li>
+                                    <li>
+                                        <LinkRouter to="/portifolio/habilidades"  className="link-router"><LinkScroll to="Habilidades"
+                                            smooth={true}
+                                            duration={500}
+                                            spy={false}
+                                            offset={-80}>Habilidades</LinkScroll>
+                                        </LinkRouter>
+                                    </li>
+                                </ul>
+                            </HeaderMenu>
+                        </HeaderNav>    
+                    </HeaderSite>
+                    <BannerHeader>
+                        <BannerDivider>
+                            <Presentation>Olá, me chamo Fred Vieira
+                                <PresentationJob>Sou desenvolvedor full stack junior!</PresentationJob>
+                                <ButtonCV>Download CV</ButtonCV>
+                                <ButtonContact>Entrar em contato</ButtonContact>
+                            </Presentation>
+                            
+                            <ImageProfile src={profile}></ImageProfile>
+                        </BannerDivider>
+                    </BannerHeader>
+                </Container>
 
+            </BrowserRouter>
         </>
     );
 }

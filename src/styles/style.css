@@ -9,6 +9,7 @@
 html, body {
   height: 100%;
   background-color: #1A1A1A;
+  scroll-behavior: smooth;
 }
 
 .menu-list {

@@ -50,6 +50,7 @@ const AboutIconsTitle = styled.h4`
 
 const AboutIconsDesc = styled.h4`
     color: #ccc;
+    text-align: center;
 `;
 
 const AboutIconsDescLink = styled.a`

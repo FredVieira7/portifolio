@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "../../styles/style.css";
+import { Link as LinkScroll} from "react-scroll"
 
 import DeliveryPizzas from '../../images/deliverypizzas.png';
 import DeliveryPizzasTests from '../../images/deliverypizzastests.png';
@@ -74,50 +75,52 @@ const Projects = () => {
     return(
         <>
             <Container>
+                <LinkScroll id="Projetos">
                 <ProjectsTitle>Projetos</ProjectsTitle>
-                <ContainerProjects>
+                    <ContainerProjects>
 
-                    <ProjectsBody>
-                        <ProjectsImg src={DeliveryPizzas}></ProjectsImg>
-                        <ProjectsBodyTitle>Pizza Delivery</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: HTML, CSS e JavaScript.</ProjectsBodyDesc>
-                    </ProjectsBody>
+                        <ProjectsBody>
+                            <ProjectsImg src={DeliveryPizzas}></ProjectsImg>
+                            <ProjectsBodyTitle>Pizza Delivery</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: HTML, CSS e JavaScript.</ProjectsBodyDesc>
+                        </ProjectsBody>
 
-                    <ProjectsBody>
-                        <ProjectsImg src={DeliveryPizzasTests}></ProjectsImg>
-                        <ProjectsBodyTitle>Pizza Delivery Tests</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: JavaScript e Cypress.</ProjectsBodyDesc>
-                    </ProjectsBody>
+                        <ProjectsBody>
+                            <ProjectsImg src={DeliveryPizzasTests}></ProjectsImg>
+                            <ProjectsBodyTitle>Pizza Delivery Tests</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: JavaScript e Cypress.</ProjectsBodyDesc>
+                        </ProjectsBody>
 
-                    <ProjectsBody>
-                        <ProjectsImg src={ContaBancaria}></ProjectsImg>
-                        <ProjectsBodyTitle>Conta Bancária</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: .NET e C#.</ProjectsBodyDesc>
-                    </ProjectsBody>
+                        <ProjectsBody>
+                            <ProjectsImg src={ContaBancaria}></ProjectsImg>
+                            <ProjectsBodyTitle>Conta Bancária</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: .NET e C#.</ProjectsBodyDesc>
+                        </ProjectsBody>
 
-                </ContainerProjects>
+                    </ContainerProjects>
 
-                <ContainerProjects>
+                    <ContainerProjects>
 
-                    <ProjectsBody>
-                        <ProjectsImg src={ReactTodoList}></ProjectsImg>
-                        <ProjectsBodyTitle>Todo List</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: HTML, CSS, JS e React com Styled Components.</ProjectsBodyDesc>
-                    </ProjectsBody>
+                        <ProjectsBody>
+                            <ProjectsImg src={ReactTodoList}></ProjectsImg>
+                            <ProjectsBodyTitle>Todo List</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: HTML, CSS, JS e React com Styled Components.</ProjectsBodyDesc>
+                        </ProjectsBody>
 
-                    <ProjectsBody>
-                        <ProjectsImg src={Aero}></ProjectsImg>
-                        <ProjectsBodyTitle>FCamara-Squad09 Hackathon</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: HTML, CSS e JavaScript.</ProjectsBodyDesc>
-                    </ProjectsBody>
-                        
-                    <ProjectsBody>
-                        <ProjectsImg src={TestesUnitarios}></ProjectsImg>
-                        <ProjectsBodyTitle>Testes Unitários em C#</ProjectsBodyTitle>
-                        <ProjectsBodyDesc>Tecnologias: C# e NUnit.</ProjectsBodyDesc>
-                    </ProjectsBody>
+                        <ProjectsBody>
+                            <ProjectsImg src={Aero}></ProjectsImg>
+                            <ProjectsBodyTitle>FCamara-Squad09 Hackathon</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: HTML, CSS e JavaScript.</ProjectsBodyDesc>
+                        </ProjectsBody>
+                            
+                        <ProjectsBody>
+                            <ProjectsImg src={TestesUnitarios}></ProjectsImg>
+                            <ProjectsBodyTitle>Testes Unitários em C#</ProjectsBodyTitle>
+                            <ProjectsBodyDesc>Tecnologias: C# e NUnit.</ProjectsBodyDesc>
+                        </ProjectsBody>
 
-                </ContainerProjects>
+                    </ContainerProjects>
+                </LinkScroll>
             </Container>
 
         </>

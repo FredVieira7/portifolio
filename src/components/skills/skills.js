@@ -1,5 +1,7 @@
+import React from "react";
 import styled from "styled-components";
 import "../../styles/style.css";
+import { Link as LinkScroll} from "react-scroll";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3, faBootstrap, faSass, faReact} from "@fortawesome/free-brands-svg-icons";
@@ -52,26 +54,30 @@ const Skills = () => {
     return(
         <>
             <Container>
-                <SkillsTitle>Minhas Habilidades</SkillsTitle>
-                <SkillsContainer>
-                    <SkillsBody>
-                        <SkillsIcon>
-                            <FontAwesomeIcon size="1x" icon={faHtml5}></FontAwesomeIcon>
-                        </SkillsIcon>
-                        <SkillsIcon>
-                            <FontAwesomeIcon size="1x" icon={faCss3}></FontAwesomeIcon>
-                        </SkillsIcon>
-                        <SkillsIcon>
-                            <FontAwesomeIcon size="1x" icon={faBootstrap}></FontAwesomeIcon>
-                        </SkillsIcon>
-                        <SkillsIcon>
-                            <FontAwesomeIcon size="1x" icon={faSass}></FontAwesomeIcon>
-                        </SkillsIcon>
-                        <SkillsIcon>
-                            <FontAwesomeIcon size="1x" icon={faReact}></FontAwesomeIcon>
-                        </SkillsIcon>
-                    </SkillsBody>
-                </SkillsContainer>
+                <LinkScroll id="Habilidades">
+                    <SkillsTitle>Minhas Habilidades</SkillsTitle>
+                    <SkillsContainer>
+                        
+                        <SkillsBody>
+                            <SkillsIcon>
+                                <FontAwesomeIcon size="1x" icon={faHtml5}></FontAwesomeIcon>
+                            </SkillsIcon>
+                            <SkillsIcon>
+                                <FontAwesomeIcon size="1x" icon={faCss3}></FontAwesomeIcon>
+                            </SkillsIcon>
+                            <SkillsIcon>
+                                <FontAwesomeIcon size="1x" icon={faBootstrap}></FontAwesomeIcon>
+                            </SkillsIcon>
+                            <SkillsIcon>
+                                <FontAwesomeIcon size="1x" icon={faSass}></FontAwesomeIcon>
+                            </SkillsIcon>
+                            <SkillsIcon>
+                                <FontAwesomeIcon size="1x" icon={faReact}></FontAwesomeIcon>
+                            </SkillsIcon>
+                        </SkillsBody>
+                        
+                    </SkillsContainer>     
+                </LinkScroll>
             </Container>
         </>
     );
