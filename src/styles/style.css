@@ -15,15 +15,12 @@ html, body {
 .menu-list {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  max-width: 100%;
 }
 
 .menu-list li {
   padding: 10px 30px;
-}
-
-.menu-list li a {
-  font-size: 1.2rem;
-  position: relative;
 }
 
 .menu-list li a:before {

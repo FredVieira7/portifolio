@@ -10,7 +10,7 @@ import profile from "../../images/perfil.png"
 const Container = styled.div`
     width: 65rem;
     max-width: 100%;
-    height: 2rem;
+    height: 15rem;
     margin: 0px auto;
     padding: 0px 2%;
 `;
@@ -30,11 +30,13 @@ const HeaderLogo = styled.h1`
         transform: scale(1.1);
         color: #D008F9;
     }
+
 `;
 
 const HeaderNav = styled.nav`
     display: flex;
-    justify-content: space-around;
+    justify-content:  none;
+
 `;
 
 const HeaderMenu = styled.ul`
@@ -42,22 +44,26 @@ const HeaderMenu = styled.ul`
     li {
         color: white;
         list-style-type: none;
+        text-align: center;
     }
 `;
 
 const BannerHeader = styled.div`
     margin-top: 12rem;
+
 `;
 
 const BannerDivider = styled.div`
     display: flex;
     justify-content: space-between;
+
 `;
 
 const Presentation = styled.h1`
     color: white;
     margin-bottom: 10px;
     width: 16rem;
+
 `;
 
 const PresentationJob = styled.h3`
@@ -66,6 +72,7 @@ const PresentationJob = styled.h3`
     margin-top: 25px;
     color: #ccc;
     font-size: 1.2rem;
+
 `;
 
 const ButtonCV = styled.button`
@@ -84,6 +91,7 @@ const ButtonCV = styled.button`
         border: 1px solid #D008F9;
         background-color: white;
     }
+
 `;
 
 const ButtonContact = styled.button`

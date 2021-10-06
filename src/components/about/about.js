@@ -15,7 +15,6 @@ const Container = styled.div`
 
 const AboutMe = styled.section`
     width: 100%;
-
 `;
 
 const AboutMeTitle = styled.h1`
