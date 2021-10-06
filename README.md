@@ -10,3 +10,5 @@
     <li>React</li>
     <li>Styled Components</li>
 </ul>
+
+<p>O foco dessa tela foi apenas aprender React, sem foco no CSS e responsivo.</p>
