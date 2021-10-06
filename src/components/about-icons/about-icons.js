@@ -26,7 +26,6 @@ const AboutIconsSection = styled.section`
 
 const AboutIconsBody = styled.div`
     max-width: 100%;
-    
 `;
 
 const AboutIconsType = styled.i`
@@ -40,6 +39,7 @@ const AboutIconsType = styled.i`
     &:hover {
         transform: scale(1.1);
     }
+
 `;
 
 const AboutIconsTitle = styled.h4`
@@ -50,6 +50,7 @@ const AboutIconsTitle = styled.h4`
 
 const AboutIconsDesc = styled.h4`
     color: #ccc;
+    text-align: center;
 `;
 
 const AboutIconsDescLink = styled.a`
